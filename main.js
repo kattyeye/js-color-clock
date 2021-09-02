@@ -51,13 +51,13 @@ function showTime() {
     $background.style.background = color;
     // document.getElementsByClassName("clock").innerHTML = color;
 
-    $progressBar.style.width = ((min / 60) * 100) + "%";
-    console.log(((min / 60) * 100) + "%");
+    $progressBar.style.width = `${sec / 60 * 14}rem`
+    console.log(`${sec / 60 * 14}rem`);
     // const counter = document.querySelector('clock-display');
 }
 
 setInterval(showTime, 1000); 
-
+showTime();
 
 // document.getElementById("clock-display").textContent = currentTime;
 // document.getElementsByClassName("clock-display").textContent = currentTime;
